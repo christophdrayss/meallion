@@ -52,9 +52,6 @@ https://meallion.de/embed
 https://meallion.de/upload
 https://meallion.de/recipes
 
-
-## A. ingredients
-
 	Allows interaction with the ingredients database.
 	
 	
