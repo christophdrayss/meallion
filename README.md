@@ -169,4 +169,3 @@ The method SearchEngine.IndexAll() downloads the entire database and reindexes i
 2. Copy the meallion.conf file into the WEB-INF folder
 3. replace https://www.meallion.de with http://localhost/Meallion everywhere in the project
 3. Now meallion should run on local machine, connecting to meallion.de mySQL and Lucene.
-
