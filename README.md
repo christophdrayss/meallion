@@ -1,6 +1,6 @@
 # meallion
 
-meallion is an AI-based universal online grocery ordering system based on a scaleable and dynamic recipes database.
+meallion is an AI-enhanced universal online grocery ordering system based on a scaleable and dynamic recipes database.
 
 :tomato::eggplant::corn::tangerine::pizza::spaghetti::stew:
 
