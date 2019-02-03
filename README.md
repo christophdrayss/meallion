@@ -53,25 +53,14 @@ https://meallion.de/recipes
 ## A. ingredients
 
 	Allows interaction with the ingredients database.
-	
-	Command: name of ingredient
-	Parameter: none
-	Example: https://meallion.de/ingredients/potato
-	
-	Response: Returns a plain string of potato ingredient
-	
-	Command: getbyid
-	Parameter: id
-	Example: https://meallion.de/ingredients/getbyid?id=2
-	Response: Returns a plain string of ingredient with the id=2
-		
+
 	
 ## B. recipes
 
 	Allows interaction with the recipes database.
 	
 	
-	Command: <name of recipe>
+	Command: [name of recipe]
 	Parameter: none
 	Example: https://meallion.de/recipes/spaghetti-bolognese
 	Response: Returns a fully featured and css-designed recipe html page
@@ -92,7 +81,7 @@ https://meallion.de/recipes
 	Example: https://meallion.de/menus
 	Response: Returns a fully featured and css-designed html page of a user's current menu (saved in his http session)
 	
-	Command: <name of menu>
+	Command: [name of menu]
 	Parameter: none
 	Example: https://meallion.de/menu/fit-in-20-days
 	Response: Returns a fully featured and css-designed menu html page
