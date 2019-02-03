@@ -116,7 +116,7 @@ Response: if request_ingredient_list=true: Returns a fully featured and css-desi
 	
 ### D. upload
 
-Allows to upload a food pic for an AI to detect the ingredients.
+Allows to upload a food pic for an AI to detect the ingredients. The deep learning framework is provided by clarifai.com
 
 Command: **none**  
 Parameter: image object (multipart http post)  
