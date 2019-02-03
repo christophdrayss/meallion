@@ -1,6 +1,7 @@
 # meallion
 
 meallion is an AI-based universal online grocery ordering system based on a scaleable and dynamic recipes database.
+
 :tomato::eggplant::corn::tangerine::pizza::spaghetti::stew:
 
 The meallion project consists of a mySQL recipe database and allowes recipe searches by keywords or ingredients. The search queries are run by Apache Lucene, one of the worlds most powerful full-text search engine algorithm that is also used by Twitter(c).
