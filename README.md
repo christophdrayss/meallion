@@ -16,7 +16,7 @@ The meallion database on meallion.de is constantly growing. To help the database
 
 Example pages of the running code are live on https://www.meallion.de.
 
-# 1. Database / Base Model
+# 1. Database / base model
 
 meallion uses the Java hibernate / JPA framework to communicate with mySQL. The base model includes the following object in /orm (object relationship model):
  
@@ -156,7 +156,7 @@ Parameter: none
 Example: https://meallion.de/system/getallsessionmealplans  
 Response: Returns plain string of a list of a user's current session mealplans.  
 
-# 3. Search Engine
+# 3. Search engine
 
 meallion.de runs Solr (http://meallion.de:8983/solr/meallion). 
 The features.SearchEngine object can run searches based on user input on the main page. The result is a SearchResults object, which holds a list of recipes and menus found as well as a meta integer, giving information about how/if the search went well.
