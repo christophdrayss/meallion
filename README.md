@@ -16,9 +16,7 @@ The meallion database on meallion.de is constantly growing. To help the database
 
 Example pages of the running code are live on https://www.meallion.de.
 
-------------------------
-1. Database / Base Model
-------------------------
+# 1. Database / Base Model
 
 meallion uses the Java hibernate / JPA framework to communicate with mySQL. The base model includes the following object in /orm (object relationship model):
  
@@ -39,9 +37,7 @@ One MealPlan holds these tree Recipes: "One Potato with eggs", "One Potato with 
 Calling MealPlan.UpdateIngredientAmounts() will merge the total ingredients together, i.e. calculating that 3 potatoes are needed in total.
 Calling MealPlan.GetMealPlanIngredients() will then return a list of MealPlanIngredient objects, which holds one Ingredient object and a amount number.
 
--------------------------------------------------
-2. Client-server communication
--------------------------------------------------
+# 2. Client-server communication
 
 meallion.de offers several webhooks to interact with the server:
 
@@ -52,6 +48,9 @@ https://meallion.de/system
 https://meallion.de/embed
 https://meallion.de/upload
 https://meallion.de/recipes
+
+
+## A. ingredients
 
 	Allows interaction with the ingredients database.
 	
@@ -159,18 +158,14 @@ https://meallion.de/recipes
 	Example: https://meallion.de/system/getallsessionmealplans
 	Response: Returns plain string of a list of a user's current session mealplans.
 
-----------------
-3. Search Engine
-----------------
+# 3. Search Engine
 
 meallion.de runs Solr (http://meallion.de:8983/solr/meallion). 
 The features.SearchEngine object can run searches based on user input on the main page. The result is a SearchResults object, which holds a list of recipes and menus found as well as a meta integer, giving information about how/if the search went well.
 
 The method SearchEngine.IndexAll() downloads the entire database and reindexes it into Solr documents.
 
--------------------------------
-4. Init to run on local machine
--------------------------------
+# 4. Init to run on local machine
 
 1. In the resources folder, make sure the persistence.xml file contains the content of the file persistence_FOR LOCAL USE.xml.
 2. Copy the meallion.conf file into the WEB-INF folder
