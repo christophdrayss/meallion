@@ -18,7 +18,7 @@ The meallion database on meallion.de is constantly growing. To help the database
 
 Example pages are live on https://www.meallion.de.
 
-# 1. Database / Base Model
+# 1. Database / base model
 
 meallion uses the Java hibernate / JPA framework to communicate with mySQL. The base model includes the following object in /orm (object relationship model):
  
