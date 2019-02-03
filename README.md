@@ -127,10 +127,10 @@ Response: Returns a html page showing the image and the AI outcome.
 Allows general system administration.
 	
 	
-Command: heap
-Parameter: none
-Example: https://meallion.de/system/heap
-Response: Returns plain string JRE heap information
+Command: heap  
+Parameter: none  
+Example: https://meallion.de/system/heap  
+Response: Returns plain string JRE heap information  
 	
 Command: reindex
 Parameter: none
