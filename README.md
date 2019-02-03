@@ -54,16 +54,15 @@ https://meallion.de/recipes
 
 Allows interaction with the ingredients database.
 	
-Command: [name of ingredient]
-Parameter: none
-Example: https://meallion.de/ingredients/potato
+Command: [name of ingredient]  
+Parameter: none  
+Example: https://meallion.de/ingredients/potato  
+Response: Returns a plain string of potato ingredient  
 
-Response: Returns a plain string of potato ingredient
-
-Command: getbyid
-Parameter: id
-Example: https://meallion.de/ingredients/getbyid?id=2
-Response: Returns a plain string of ingredient with the id=2
+Command: getbyid  
+Parameter: id  
+Example: https://meallion.de/ingredients/getbyid?id=2  
+Response: Returns a plain string of ingredient with the id=2  
 		
 	
 ## B. recipes
@@ -71,15 +70,15 @@ Response: Returns a plain string of ingredient with the id=2
 Allows interaction with the recipes database.
 
 
-Command: [name of recipe]
-Parameter: none
-Example: https://meallion.de/recipes/spaghetti-bolognese
-Response: Returns a fully featured and css-designed recipe html page
+Command: [name of recipe]  
+Parameter: none  
+Example: https://meallion.de/recipes/spaghetti-bolognese  
+Response: Returns a fully featured and css-designed recipe html page  
 
-Command: request_selection
-Parameter: buget, time, veggie, vegan, tags
-Example: https://www.meallion.de/recipes/request_selection?budget=10000&time=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine
-Response: Returns a html page with a list of fully featured and css-designed recipes objects (search results)
+Command: request_selection  
+Parameter: buget, time, veggie, vegan, tags  
+Example: https://www.meallion.de/recipes/request_selection?budget=10000&time=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine  
+Response: Returns a html page with a list of fully featured and css-designed recipes objects (search results)  
 
 
 ## C. menus
@@ -87,40 +86,40 @@ Response: Returns a html page with a list of fully featured and css-designed rec
 Allows interaction with the menus database.
 
 
-Command: none
-Parameter: none
-Example: https://meallion.de/menus
-Response: Returns a fully featured and css-designed html page of a user's current menu (saved in his http session)
+Command: none  
+Parameter: none  
+Example: https://meallion.de/menus  
+Response: Returns a fully featured and css-designed html page of a user's current menu (saved in his http session)  
 
-Command: [name of menu]
-Parameter: none
-Example: https://meallion.de/menu/fit-in-20-days
-Response: Returns a fully featured and css-designed menu html page
+Command: [name of menu]  
+Parameter: none  
+Example: https://meallion.de/menu/fit-in-20-days  
+Response: Returns a fully featured and css-designed menu html page  
 
-Command: request_selection
-Parameter: buget, veggie, vegan, tags
-Example: https://www.meallion.de/recipes/request_selection?budget=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine
+Command: request_selection  
+Parameter: buget, veggie, vegan, tags  
+Example: https://www.meallion.de/recipes/request_selection?budget=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine  
 Response: Returns a html page with a list of fully featured and css-designed menus objects (search results)
 
-Command: change_portions
-Parameter: mealplan_keyword, recipeid, portions
-Example: https://www.meallion.de/recipes/change_portions?mealplan_keyword=current_mealplan?recipeid=45?portions=4?request_ingredient_list=true
-Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response
+Command: change_portions  
+Parameter: mealplan_keyword, recipeid, portions  
+Example: https://www.meallion.de/recipes/change_portions?mealplan_keyword=current_mealplan?recipeid=45?portions=4?request_ingredient_list=true  
+Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response  
 
-Command: save (saves current session mealplan into the database)
-Parameter: name recipeid, descr
-Example: https://www.meallion.de/recipes/change_portions?name=vegan-for-beginners?descr=this is a hardcore 1 month mealplan without animal products
-Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response
+Command: save (saves current session mealplan into the database)  
+Parameter: name recipeid, descr  
+Example: https://www.meallion.de/recipes/change_portions?name=vegan-for-beginners?descr=this is a hardcore 1 month mealplan without animal products  
+Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response  
 
 	
 ## D. upload
 
 Allows to upload a food pic for an AI to detect the ingredients.
 
-Command: request_selection
-Parameter: image object (multipart http post)
-Example: n.m.
-Response: Returns a html page showing the image and the AI outcome.
+Command: request_selection  
+Parameter: image object (multipart http post)  
+Example: n.m.  
+Response: Returns a html page showing the image and the AI outcome.  
 
 ## E. system
 
@@ -132,30 +131,30 @@ Parameter: none
 Example: https://meallion.de/system/heap  
 Response: Returns plain string JRE heap information  
 	
-Command: reindex
-Parameter: none
-Example: https://meallion.de/system/reindex
-Response: "Reindexed" if successfully reindexed the database for the Apache Lucene search engine
+Command: reindex  
+Parameter: none  
+Example: https://meallion.de/system/reindex  
+Response: "Reindexed" if successfully reindexed the database for the Apache Lucene search engine  
 
-Command: echo
-Parameter: none
-Example: https://meallion.de/system/echo
-Response: "echo echo.."
+Command: echo  
+Parameter: none  
+Example: https://meallion.de/system/echo  
+Response: "echo echo.."  
 
-Command: clear
-Parameter: none
-Example: https://meallion.de/system/clear
-Response: "success" if the database chache is sucessfully cleared
+Command: clear  
+Parameter: none  
+Example: https://meallion.de/system/clear  
+Response: "success" if the database chache is sucessfully cleared  
 
-Command: email_address_input
-Parameter: none
-Example: https://meallion.de/system/email_address_input?email_address=christoph.drayss@gmail.com
+Command: email_address_input  
+Parameter: none  
+Example: https://meallion.de/system/email_address_input?email_address=christoph.drayss@gmail.com  
 Response: none. Saves the email address in the Java log files for contact purposes.
 
-Command: getallsessionmealplans
-Parameter: none
-Example: https://meallion.de/system/getallsessionmealplans
-Response: Returns plain string of a list of a user's current session mealplans.
+Command: getallsessionmealplans  
+Parameter: none  
+Example: https://meallion.de/system/getallsessionmealplans  
+Response: Returns plain string of a list of a user's current session mealplans.  
 
 # 3. Search Engine
 
