@@ -127,35 +127,35 @@ Response: Returns a html page showing the image and the AI outcome.
 Allows general system administration.
 	
 	
-Command: heap
-Parameter: none
-Example: https://meallion.de/system/heap
-Response: Returns plain string JRE heap information
-	
-Command: reindex
-Parameter: none
-Example: https://meallion.de/system/reindex
-Response: "Reindexed" if successfully reindexed the database for the Apache Lucene search engine
-
-Command: echo
-Parameter: none
-Example: https://meallion.de/system/echo
-Response: "echo echo.."
-
-Command: clear
-Parameter: none
-Example: https://meallion.de/system/clear
-Response: "success" if the database chache is sucessfully cleared
-
-Command: email_address_input
-Parameter: none
-Example: https://meallion.de/system/email_address_input?email_address=christoph.drayss@gmail.com
-Response: none. Saves the email address in the Java log files for contact purposes.
-
-Command: getallsessionmealplans
-Parameter: none
-Example: https://meallion.de/system/getallsessionmealplans
-Response: Returns plain string of a list of a user's current session mealplans.
+	Command: heap
+	Parameter: none
+	Example: https://meallion.de/system/heap
+	Response: Returns plain string JRE heap information
+		
+	Command: reindex
+	Parameter: none
+	Example: https://meallion.de/system/reindex
+	Response: "Reindexed" if successfully reindexed the database for the Apache Lucene search engine
+-
+	Command: echo
+	Parameter: none
+	Example: https://meallion.de/system/echo
+	Response: "echo echo.."
+-
+	Command: clear
+	Parameter: none
+	Example: https://meallion.de/system/clear
+	Response: "success" if the database chache is sucessfully cleared
+-
+	Command: email_address_input
+	Parameter: none
+	Example: https://meallion.de/system/email_address_input?email_address=christoph.drayss@gmail.com
+	Response: none. Saves the email address in the Java log files for contact purposes.
+-
+	Command: getallsessionmealplans
+	Parameter: none
+	Example: https://meallion.de/system/getallsessionmealplans
+	Response: Returns plain string of a list of a user's current session mealplans.
 
 # 3. Search Engine
 
