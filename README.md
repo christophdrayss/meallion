@@ -5,7 +5,9 @@ meallion is an AI-based universal online grocery ordering system based on a scal
 :tomato::eggplant::corn::tangerine::pizza::spaghetti::stew:
 
 The meallion project consists of a mySQL recipe database and allowes recipe searches by keywords or ingredients. The search queries are run by Apache Lucene, one of the worlds most powerful full-text search engine algorithm that is also used by Twitter(c).
-The database consists of a simplified structure of recipes, ingredients and menu objects as well as joint-tables: - a recipe is a compilation of ingredients. - a menu is a compilation of recipes.
+The database consists of a simplified structure of recipes, ingredients and menu objects as well as joint-tables:  
+- A recipe is a compilation of ingredients.  
+- A menu is a compilation of recipes.
 
 On top, meallion has a fully-featured html front-end that allows users to select recipes, save them in personalized HTTP sessions and compile grocery carts.
 These generated grocery shopping carts can be exported as JSON or XMLs strings and used universially - e.g. to send to grocery suppliers as a qualified consumer lead. 
@@ -16,7 +18,7 @@ The meallion database on meallion.de is constantly growing. To help the database
 
 Example pages of the running code are live on https://www.meallion.de.
 
-# 1. Database / base model
+# 1. Database / Base Model
 
 meallion uses the Java hibernate / JPA framework to communicate with mySQL. The base model includes the following object in /orm (object relationship model):
  
@@ -156,7 +158,7 @@ Parameter: none
 Example: https://meallion.de/system/getallsessionmealplans  
 Response: Returns plain string of a list of a user's current session mealplans.  
 
-# 3. Search engine
+# 3. Search Engine
 
 meallion.de runs Solr (http://meallion.de:8983/solr/meallion). 
 The features.SearchEngine object can run searches based on user input on the main page. The result is a SearchResults object, which holds a list of recipes and menus found as well as a meta integer, giving information about how/if the search went well.
@@ -169,3 +171,4 @@ The method SearchEngine.IndexAll() downloads the entire database and reindexes i
 2. Copy the meallion.conf file into the WEB-INF folder
 3. replace https://www.meallion.de with http://localhost/Meallion everywhere in the project
 3. Now meallion should run on local machine, connecting to meallion.de mySQL and Lucene.
+
