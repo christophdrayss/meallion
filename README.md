@@ -58,8 +58,11 @@ https://meallion.de/recipes
 	
 	**
 	Command: <name of ingredient>
+	
 	Parameter: none
+	
 	Example: https://meallion.de/ingredients/potato
+	
 	Response: Returns a plain string of potato ingredient
 	**
 	Command: getbyid
