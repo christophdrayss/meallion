@@ -54,8 +54,7 @@ https://meallion.de/recipes
 
 	Allows interaction with the ingredients database.
 	
-	
-	Command: [name of ingredient}
+	Command: name of ingredient
 	Parameter: none
 	Example: https://meallion.de/ingredients/potato
 	
