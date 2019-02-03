@@ -50,10 +50,21 @@ https://meallion.de/upload
 https://meallion.de/recipes
 
 
-## A. ingredients
+A. ingredients
 
 	Allows interaction with the ingredients database.
-
+	
+	Command: [name of ingredient]
+	Parameter: none
+	Example: https://meallion.de/ingredients/potato
+	
+	Response: Returns a plain string of potato ingredient
+	
+	Command: getbyid
+	Parameter: id
+	Example: https://meallion.de/ingredients/getbyid?id=2
+	Response: Returns a plain string of ingredient with the id=2
+		
 	
 ## B. recipes
 
