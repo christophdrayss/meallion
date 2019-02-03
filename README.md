@@ -52,7 +52,7 @@ https://meallion.de/upload
 https://meallion.de/recipes
 
 
-1. https://meallion.de/ingredients
+A. /ingredients
 
 	Allows interaction with the ingredients database.
 	
@@ -70,7 +70,7 @@ https://meallion.de/recipes
 	**
 	
 	
-2. https://meallion.de/recipes
+B. /recipes
 
 	Allows interaction with the recipes database.
 	
@@ -86,7 +86,7 @@ https://meallion.de/recipes
 	Response: Returns a html page with a list of fully featured and css-designed recipes objects (search results)
 	
 	
-3. https://meallion.de/menus
+C. /menus
 
 	Allows interaction with the menus database.
 	
@@ -117,7 +117,7 @@ https://meallion.de/recipes
 	Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response
 	
 		
-4. https://meallion.de/upload
+D. /upload
 
 	Allows to upload a food pic for an AI to detect the ingredients.
 	
@@ -126,7 +126,7 @@ https://meallion.de/recipes
 	Example: n.m.
 	Response: Returns a html page showing the image and the AI outcome.
 	
-5. https://meallion.de/system
+E. /system
 
 	Allows general system administration.
 	
