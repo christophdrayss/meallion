@@ -100,17 +100,17 @@ Response: Returns a fully featured and css-designed menu html page
 
 Command: **request_selection**  
 Parameter: buget, veggie, vegan, tags  
-Example: https://www.meallion.de/recipes/request_selection?budget=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine  
+Example: https://www.meallion.de/menus/request_selection?budget=10000&veggie=false&vegan=false&tags=tags%3Ditalian%252Cquick%252Chaute%2520cuisine  
 Response: Returns a html page with a list of fully featured and css-designed menus objects (search results)
 
 Command: **change_portions**  
 Parameter: mealplan_keyword, recipeid, portions  
-Example: https://www.meallion.de/recipes/change_portions?mealplan_keyword=current_mealplan?recipeid=45?portions=4?request_ingredient_list=true  
+Example: https://www.meallion.de/menus/change_portions?mealplan_keyword=current_mealplan?recipeid=45?portions=4?request_ingredient_list=true  
 Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response  
 
 Command: **save** (saves current session mealplan into the database)  
 Parameter: name recipeid, descr  
-Example: https://www.meallion.de/recipes/change_portions?name=vegan-for-beginners?descr=this is a hardcore 1 month mealplan without animal products  
+Example: https://www.meallion.de/menus/change_portions?name=vegan-for-beginners?descr=this is a hardcore 1 month mealplan without animal products  
 Response: if request_ingredient_list=true: Returns a fully featured and css-designed ingredients list in html; if request_ingredient_list=false: no response  
 
 	
