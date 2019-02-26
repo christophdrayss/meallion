@@ -19,10 +19,10 @@ In addition to the front-end, meallion offers widgets, that can be integrated on
 The meallion database on meallion.de is constantly growing. To help the database scale, meallion integrates an AI-based ingredients detection feature for food pictures. As an example: uploading a picture of a plate of Paella will let meallion detect the ingredient "rice".
 
 Example pages are live on
-https://www.meallion.de/examples/detect
-https://www.meallion.de/examples/search
-https://www.meallion.de/examples/embed
-https://www.meallion.de/examples/recipe
+https://www.meallion.de/examples/detect  
+https://www.meallion.de/examples/search  
+https://www.meallion.de/examples/embed  
+https://www.meallion.de/examples/recipe  
 
 ## 1. Database / base model
 
