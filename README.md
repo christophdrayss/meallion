@@ -4,9 +4,13 @@ https://www.meallion.de
 
 meallion is a universal online grocery ordering system based on a scalable and dynamic recipe database that uses machine learning to identify ingredients and collect food data.
 
-![alt text](https://raw.githubusercontent.com/christophdrayss/meallion/master/ingredients.png)
-
 :tomato::eggplant::corn::tangerine::pizza::spaghetti::stew:
+
+![alt text](https://raw.githubusercontent.com/christophdrayss/meallion/master/ingredients.png)
+![alt text](https://github.com/christophdrayss/meallion/blob/master/howitworks_embedding.png)
+![alt text](https://github.com/christophdrayss/meallion/blob/master/howitworks_searchandcompose.png)
+![alt text](https://github.com/christophdrayss/meallion/blob/master/howitworks_backendux.png?raw=true)
+
 
 The meallion project consists of a mySQL recipe database and allowes recipe searches by keywords or ingredients. The search queries are run by Apache Lucene, one of the world's most powerful full-text search engine algorithms, that is also used by Twitter(c).
 The database consists of a simplified structure of recipe, ingredient and menu objects as well as joint-tables.  
